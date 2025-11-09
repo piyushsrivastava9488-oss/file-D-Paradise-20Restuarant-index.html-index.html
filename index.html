@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Paradise Restaurant</h1>
+        <p>Contact: 7991206654 | Owners: R.K. and Ruchi Srivastava</p>
+    </header>
+    <nav>
+        <button onclick="showCategory('starters')">Chinese Starters</button>
+        <button onclick="showCategory('noodles')">Noodles</button>
+        <button onclick="showCategory('rice')">Chinese Rice</button>
+        <button onclick="showCategory('pizza')">Pizza</button>
+        <button onclick="showCategory('burgers')">Burgers</button>
+        <button onclick="showCategory('momos')">Momos</button>
+        <button onclick="showCategory('thali')">Thali</button>
+        <button onclick="showCategory('addons')">Addons</button>
+    </nav>
+    <input type="text" id="search" placeholder="Search items..." onkeyup="searchItems()">
+    <div id="menu">
+        <!-- Categories will be populated by JS -->
+    </div>
+    <footer>
+        <h2>Place an Order</h2>
+        <form id="orderForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Item" required>
+            <input type="number" placeholder="Quantity" required>
+            <button type="submit">Order via WhatsApp</button>
+        </form>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
